@@ -1,16 +1,10 @@
-import NavBar from '@component/components/NavBar';
+import Layout from '@component/components/Layout';
 
 // 꼭 이 파일명으로 작성해야 함.
 export default function App({ Component, pageProps }) {
   return (
-    <>
-      <NavBar />
+    <Layout>
       <Component {...pageProps} />
-      <style jsx global>{`
-        a {
-          color: white;
-        }
-      `}</style>
-    </>
+    </Layout>
   );
 }
